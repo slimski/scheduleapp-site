@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
+import { siteContent } from '@/content/content'
+
 
 export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
+  const { navLinks } = siteContent
 
-  return [
-    ['Features', '#features'],
-    ['Reviews', '#reviews'],
-    ['Pricing', '#pricing'],
-    ['FAQs', '#faqs'],
-  ].map(([label, href], index) => (
+  return navLinks.map(([label, href], index) => (
     <Link
       key={label}
       href={href}

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import frame from '@/images/phone_14_01.png'
+import frame from '@/images/phone_14_01.svg'
 
 function PlaceholderFrame(props) {
   return (
@@ -25,11 +25,10 @@ export function PhoneFrame({
 }) {
   return (
     <div className={clsx('relative aspect-[366/729]', className)} {...props}>
-      <div className="absolute" />
-      <div className="absolute">
+      <div className="absolute z-0" />
+      <div className="absolute z-0">
         {children}
       </div>
-      <PlaceholderFrame className="pointer-events-none absolute inset-0 h-full w-full fill-gray-100" />
       <Image
         src={frame}
         alt=""
