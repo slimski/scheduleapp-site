@@ -4,7 +4,7 @@ export const siteContent = {
   appStoreUrl: '#!!', // TODO: Update this with the app store URL
   // These go at the top of the page
   navLinks: [
-    ['Features', '#features'],
+    ['Features', '/#features'],
     // ['FAQs', '#faqs'],
   ],
   // That's the rotating feature list on the home page

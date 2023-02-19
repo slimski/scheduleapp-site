@@ -6,6 +6,7 @@ import { useDebouncedCallback } from 'use-debounce'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
+import Link from 'next/link'
 
 import {siteContent} from '@/content/content'
 
@@ -256,7 +257,7 @@ export function PrimaryFeatures() {
             Track your team and their every match.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            With its clean and user-friendly interface, Don&apos;t Miss Next Match is the perfect app for anyone who wants to stay up-to-date with their favorite soccer team&apos;s schedule and scores. Whether you&apos;re a die-hard fan or a casual spectator, this app is an essential tool for keeping track of the action on the pitch.
+            With its clean and user-friendly interface, Don&apos;t Miss Next Match is the perfect app for anyone who wants to stay up-to-date with their favorite soccer team&apos;s schedule and scores. Whether you&apos;re a die-hard fan or a casual spectator, this app is an essential tool for keeping track of the action on the pitch. Oh, and it&apos;s <Link href="/privacy" className='underline'>private by default!</Link>
           </p>
         </div>
       </Container>
