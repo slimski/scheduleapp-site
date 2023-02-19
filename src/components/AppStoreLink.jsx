@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import { siteContent } from '@/content/content'
+
+const appStoreUrl = siteContent.appStoreUrl
 
 export function AppStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href={appStoreUrl}
       aria-label="Download on the App Store"
       className={clsx(
         'rounded-lg transition-colors',

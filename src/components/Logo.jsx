@@ -14,7 +14,8 @@ export function Logomark(props) {
 }
 
 export function Logo(props) {
-  return (
-    <Image src={logo} alt="Logo" width={40} height={40} {...props} />
+  return (<div className="flex">
+    <Image src={logo} alt="Logo" width={40} height={40} {...props} /> <span className='font-bold leading-9 ml-4'>Don&apos;t Miss Next Match</span>
+    </div>
   )
 }

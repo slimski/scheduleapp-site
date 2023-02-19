@@ -7,6 +7,10 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 
+import { siteContent } from '@/content/content'
+
+const appStoreUrl = siteContent.appStoreUrl
+
 function MenuIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
@@ -108,7 +112,7 @@ export function Header() {
                             <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="#">Download the app</Button>
+                            <Button href={appStoreUrl}>Download the app</Button>
                           </div>
                         </Popover.Panel>
                       </>
@@ -117,7 +121,7 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="#" className="hidden lg:block">
+            <Button href={appStoreUrl} className="hidden lg:block">
               Download
             </Button>
           </div>
