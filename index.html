@@ -4,54 +4,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Igor Nabokov">
   <title>Don't Miss Next Match - Mobile App Description</title>
   <link rel="icon" href="./favicon.png">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container my-5">
-    <h1 class="text-center">Don't Miss Next Match</h1>
-    <p class="lead text-center">Stay up-to-date with your favorite soccer team's schedule and scores.</p>
-    <hr>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card border-secondary mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-center">Never miss a game again!</h5>
-            <p class="card-text">Don't Miss Next Match is a must-have mobile app for soccer fans who never want to miss a game. With a sleek and simple design, this app offers an easy way to stay on top of your favorite soccer team's schedule.</p>
-            <img src="App-Main-Screen.png" height="480" class="img-fluid my-3" alt="Next game screenshot">
-            <p class="card-text">The app's home screen displays the date, time, and location of the next upcoming game for your team, ensuring that you are always ready and able to tune in.</p>
-            <p class="card-text">In addition to showing the next game, Don't Miss Next Match also displays the score of the team's last game, so you can keep track of their progress throughout the season. This feature is especially useful for fans who are unable to watch every game but still want to stay informed about their team's performance.</p>
-            <img src="App-Select-Team.png" height="480" class="img-fluid my-3" alt="Last game score screenshot">
-            <p class="card-text">With its clean and user-friendly interface, Don't Miss Next Match is the perfect app for anyone who wants to stay up-to-date with their favorite soccer team's schedule and scores. Whether you're a die-hard fan or a casual spectator, this app is an essential tool for keeping track of the action on the pitch.</p>
-            <p class="card-text">Plus, you can enjoy peace of mind knowing that your privacy is being respected - Don't Miss Next Match does not collect any personal information or track your activity.</p>
-            <p class="text-center"><a href="https://apps.apple.com/app/dont-miss-next-game/id1672485239" class="btn btn-primary">Download Don't Miss Next Match</a></p>
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+    <div class="container">
+      <img class="me-2" src="favicon.png" height="24" width="24">
+      <a class="navbar-brand" href="./">Don't Miss Next Game</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
+        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacy.html">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Never miss a game again!</h1>
+        <p class="lead">Don't Miss Next Match is a must-have mobile app for soccer fans who never want to
+          miss a game. With a sleek and simple design, this app offers an easy way to stay on top of your favorite
+          soccer team's schedule.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a aria-label="Download on the App Store" class="hover:bg-gray-900" href="http://apps.apple.com/app/dont-miss-next-game/id1672485239"><img
+              src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"></a>
+        </div>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img srcset="App-Main-Screen-frame.png 2x" src="App-Main-Screen-frame.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" width="300"
+          loading="lazy">
+      </div>
+
+    </div>
+  </div>
+
+  <section class="py-5 bg-dark">
+    <div data-bs-theme="dark" class="container">
+      <!-- <h2 class="pb-2 border-bottom">Features with title</h2> -->
+
+      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h3 class="fw-bold">Track your team and their every match</h3>
+          <p class="text-muted">With its clean and user-friendly interface, Don't Miss Next Match is the perfect app for
+            anyone who wants to stay up-to-date with their favorite soccer team's schedule and scores. Whether you're a
+            die-hard fan or a casual spectator, this app is an essential tool for keeping track of the action on the
+            pitch. Oh, and it's private by default!</p>
+          <img srcset="App-Select-Team-frame.png 2x" src="App-Select-Team-frame.png" class="d-block mx-auto img-fluid" alt="Selecting team" width="300"
+            loading="lazy">
+        </div>
+
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-1 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div class="d-inline-flex">
+                <svg viewBox="0 0 32 32" aria-hidden="true" class="bi" width="1.5em" height="1.5em">
+                  <circle cx="16" cy="16" r="16" fill="#A3A3A3" fill-opacity="0.2"></circle>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 23a3 3 0 100-6 3 3 0 000 6zm-1 2a4 4 0 00-4 4v1a2 2 0 002 2h6a2 2 0 002-2v-1a4 4 0 00-4-4h-2z"
+                    fill="#737373"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5 4a4 4 0 014-4h14a4 4 0 014 4v24a4.002 4.002 0 01-3.01 3.877c-.535.136-.99-.325-.99-.877s.474-.98.959-1.244A2 2 0 0025 28V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 001.041 1.756C8.525 30.02 9 30.448 9 31s-.455 1.013-.99.877A4.002 4.002 0 015 28V4z"
+                    fill="#A3A3A3"></path>
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0">Never miss a single match!</h4>
+              <p class="text-muted">The app's home screen displays the date, time, and location of the next upcoming game for your team, ensuring that you are always ready and able to tune in.</p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div class="d-inline-flex">
+                <svg viewBox="0 0 32 32" class="bi" width="1.5em" height="1.5em">
+                  <circle cx="16" cy="16" r="16" fill="#A3A3A3" fill-opacity="0.2"></circle>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 0a4 4 0 00-4 4v24a4 4 0 004 4h14a4 4 0 004-4V4a4 4 0 00-4-4H9zm0 2a2 2 0 00-2 2v24a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9z"
+                    fill="#A3A3A3"></path>
+                  <path d="M9 8a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2H11a2 2 0 01-2-2V8z" fill="#737373"></path>
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0">Check progress throughout the season</h4>
+              <p class="text-muted">Don't Miss Next Match also displays the score of the team's last game, so you can keep track of their progress throughout the season.</p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div class="d-inline-flex">
+                <svg viewBox="0 0 32 32" class="bi" width="1.5em" height="1.5em">
+                  <defs><linearGradient id=":R7dpm:-gradient" x1="14" y1="14.5" x2="7" y2="17" gradientUnits="userSpaceOnUse"><stop stop-color="#737373"></stop><stop offset="1" stop-color="#D4D4D4" stop-opacity="0"></stop></linearGradient></defs><circle cx="16" cy="16" r="16" fill="#A3A3A3" fill-opacity="0.2"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M5 4a4 4 0 014-4h14a4 4 0 014 4v13h-2V4a2 2 0 00-2-2h-1.382a1 1 0 00-.894.553l-.448.894a1 1 0 01-.894.553h-6.764a1 1 0 01-.894-.553l-.448-.894A1 1 0 0010.382 2H9a2 2 0 00-2 2v24a2 2 0 002 2h4v2H9a4 4 0 01-4-4V4z" fill="#A3A3A3"></path><path d="M7 22c0-4.694 3.5-8 8-8" stroke="url(#:R7dpm:-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 20l.217-5.513a1.431 1.431 0 00-2.85-.226L17.5 21.5l-1.51-1.51a2.107 2.107 0 00-2.98 0 .024.024 0 00-.005.024l3.083 9.25A4 4 0 0019.883 32H25a4 4 0 004-4v-5a3 3 0 00-3-3h-5z" fill="#A3A3A3"></path>
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0">Privacy as default</h4>
+              <p class="text-muted">Enjoy peace of mind knowing that your privacy is being respected - Don't Miss Next Match does not collect any personal information or track your activity.</p>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     
-    <div class="row justify-content-center mt-5">
-      <div class="col-md-8">
-        <div class="card border-secondary mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-center">Privacy Information</h5>
-            <p class="card-text">Our mobile app is designed to protect your privacy. We do not collect any information about you or your device. We do not track your location, your browsing history, your contacts, or any other personal information. We do not use cookies, analytics tools, or any other technologies that can track your behavior or preferences.</p>
-            <p class="card-text">We respect your right to privacy and we will never sell, rent, or share your information with any third party. We do not display any ads or promotions in our app, and we do not use any third-party services that might collect data about you.</p>
-            <p class="card-text">If you have any questions or concerns about our privacy practices, please contact us at <a href=mailto:privacy@dontmissnextgame.com>privacy@dontmissnextgame.com</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>        
-  </div>
+    <p class="col-md-4 mb-0 text-muted">© 2022 Igor Nabokov</p>
 
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <img src="qr-apps-apple-com.svg" width="128" height="128">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="./" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="privacy.html" class="nav-link px-2 text-muted">Privacy</a></li>
+      <li class="nav-item"><a href="http://apps.apple.com/app/dont-miss-next-game/id1672485239" class="nav-link px-2 text-muted">Download</a></li>
+    </ul>
+  </footer>
+  </div>
+  
   <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
-    integrity="sha512-Ah3ewf44kGMJndrxpqR5JD5PyogQ+txlMGaglJJcKvxyiIGq3qYtMguxkzFXg37XZbxPCtfh63Hn1CUFzQfBw=="
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
